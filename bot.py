@@ -1,7 +1,8 @@
 import asyncio
 from aiogram import Bot, Dispatcher, types
 
-API_TOKEN = "8142007829:AAFF2OT6EbB38voLV0RgpaRTz2y3c3UmDT0"
+import os
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 
 # Русская азбука Морзе
@@ -54,3 +55,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
